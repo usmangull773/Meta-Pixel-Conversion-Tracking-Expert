@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Plant-Based Dietitians Tracking Plan</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#e9eff6;color:#0b1f36;line-height:1.6;font-size:16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.gold{color:#c8a24a}
+.lgold{color:#e3c77f}
+b,strong{font-weight:700}
+mark{background:#f5e9c8;color:#0b1f36;padding:0 4px;border-radius:3px}
+
+/* hero */
+.hero{background:#0b1f36;color:#fff;border-bottom:5px solid #c8a24a;padding:28px 0 56px}
+.topbar{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:#b9c6d6;border-bottom:1px solid #1d3d63;padding-bottom:16px;margin-bottom:40px}
+.label{color:#e3c77f;text-transform:uppercase;letter-spacing:2px;font-size:13px;font-weight:700}
+.hero h1{font-size:44px;line-height:1.15;margin:10px 0 14px}
+.hero .lead{font-size:20px;color:#d8e1ec;max-width:760px}
+.meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin:22px 0 34px;font-size:14px;color:#b9c6d6}
+.meta span b{color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kpi{background:#12355b;border-radius:10px;padding:22px}
+.kpi .n{font-size:40px;font-weight:800;color:#e3c77f;line-height:1}
+.kpi .t{font-size:14px;color:#d8e1ec;margin-top:8px}
+
+/* section heads */
+.sh{display:flex;align-items:baseline;gap:14px;margin-bottom:10px}
+.num{color:#0f4c81;font-weight:800;font-size:15px;letter-spacing:1px}
+.dark .num{color:#e3c77f}
+h2{font-size:32px;line-height:1.2}
+.intro{max-width:780px;font-size:17px;margin-bottom:32px;color:#2a3f57}
+.dark .intro{color:#d8e1ec}
+
+/* findings */
+.finding{background:#fff;border-radius:10px;box-shadow:0 4px 18px rgba(11,31,54,.08);padding:26px;margin-bottom:22px;border-left:6px solid #0f4c81}
+.finding.med{border-left-color:#c8a24a}
+.fhead{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start;margin-bottom:10px}
+.finding h3{font-size:20px;line-height:1.3}
+.tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:20px;white-space:nowrap}
+.tag.high{background:#0f4c81;color:#fff}
+.tag.medium{background:#c8a24a;color:#0b1f36}
+.finding p{color:#2a3f57;margin-bottom:14px}
+.tbl{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+.tbl th{background:#0b1f36;color:#fff;text-align:left;padding:10px 12px;font-weight:600}
+.tbl td{padding:10px 12px;border-bottom:1px solid #e3e9f1;vertical-align:top}
+.tblwrap{overflow-x:auto}
+.ok{color:#1f6f43;font-weight:700}
+.bad{color:#b3261e;font-weight:700}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+.cmp div{border-radius:8px;padding:16px;font-size:14px}
+.cmp .r{background:#fbeceb;border:1px solid #efc6c3}
+.cmp .g{background:#e8f3ec;border:1px solid #bfdcc9}
+.cmp h4{font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.cmp .r h4{color:#b3261e}
+.cmp .g h4{color:#1f6f43}
+.cmp ul{padding-left:18px}
+.cmp li{margin-bottom:6px}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;background:#eef2f7;padding:1px 5px;border-radius:4px;word-break:break-all}
+
+/* plan */
+.white{background:#fff}
+.timeline{background:#0b1f36;border-radius:12px;padding:26px;margin-bottom:30px;color:#fff}
+.timeline h4{color:#e3c77f;font-size:14px;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+.trow{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;margin-bottom:12px;font-size:14px}
+.track{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;background:#12355b;border-radius:6px;padding:6px}
+.track span{height:18px;border-radius:4px}
+.on{background:#c8a24a}
+.wk{display:grid;grid-template-columns:150px 1fr;gap:12px;font-size:12px;color:#b9c6d6;margin-bottom:8px}
+.wk div:last-child{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:0 6px;text-align:center}
+.steps{display:grid;gap:16px}
+.step{display:grid;grid-template-columns:54px 1fr;gap:16px;background:#e9eff6;border-radius:10px;padding:20px}
+.step .sn{width:44px;height:44px;border-radius:50%;background:#0f4c81;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+.step h3{font-size:18px;margin-bottom:4px}
+.step p{color:#2a3f57;font-size:15px}
+.why{font-size:14px;color:#0f4c81;margin-top:6px}
+
+/* results */
+.dark{background:#0b1f36;color:#fff}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rcard{background:#12355b;border-radius:10px;padding:24px}
+.rcard .rl{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#b9c6d6}
+.rcard .big{font-size:38px;font-weight:800;color:#e3c77f;line-height:1.1;margin:8px 0 4px}
+.rcard .sub{font-size:14px;color:#d8e1ec;margin-bottom:18px}
+.bar{margin-bottom:10px;font-size:13px;color:#d8e1ec}
+.bar .bt{display:flex;justify-content:space-between;margin-bottom:4px}
+.bar .bg{background:#0b1f36;border-radius:4px;height:14px}
+.bar .fill{height:14px;border-radius:4px;background:#c8a24a}
+.bar .fill.dim{background:#5b7593}
+
+/* next */
+.ngrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ncard{background:#fff;border-top:5px solid #c8a24a;border-radius:10px;padding:24px;box-shadow:0 4px 18px rgba(11,31,54,.06)}
+.ncard .num{display:block;margin-bottom:6px}
+.ncard h3{font-size:18px;margin-bottom:6px}
+.ncard p{font-size:15px;color:#2a3f57}
+
+.cta{background:#c8a24a;color:#0b1f36;text-align:center;padding:48px 0}
+.cta h2{font-size:30px;margin-bottom:8px}
+.cta p{font-size:17px}
+footer{background:#0b1f36;color:#b9c6d6;text-align:center;padding:26px 0;font-size:14px}
+footer b{color:#fff}
+
+@media (max-width:780px){
+  section{padding:46px 0}
+  .hero h1{font-size:32px}
+  .hero .lead{font-size:17px}
+  .kpis,.rgrid,.ngrid,.cmp{grid-template-columns:1fr}
+  h2{font-size:25px}
+  .trow,.wk{grid-template-columns:96px 1fr}
+  .step{grid-template-columns:1fr}
+}
+@media (max-width:400px){
+  .wrap{padding:0 16px}
+  .hero h1{font-size:28px}
+  .kpi .n{font-size:34px}
+  .finding{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar"><span>Meta tracking audit</span><span>October 2026</span></div>
+    <div class="label">30 day plan prepared for</div>
+    <h1>Plant-Based Dietitians</h1>
+    <p class="lead">CompleteRegistration already fires on your thank-you page. It goes to the wrong pixel, from a GTM setup that splits your events. The plan below <span class="lgold">puts every registration on one pixel your campaigns can optimise toward.</span></p>
+    <div class="meta">
+      <span>Site reviewed: <b>alyssafontaine.com</b></span>
+      <span>Container: <b>GTM-TXPX6DN, version 71</b></span>
+      <span>Format: <b>live screen share, no account access</b></span>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="n">2</div><div class="t">different Meta pixels loading on every page</div></div>
+      <div class="kpi"><div class="n">1 of 2</div><div class="t">pixels receive CompleteRegistration on /thank-you/</div></div>
+      <div class="kpi"><div class="n">2x</div><div class="t">GTM container loads per page view</div></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sh"><span class="num">01</span><h2>What we found</h2></div>
+    <p class="intro">I loaded your contact page and thank-you page and read the published GTM container. PageView reaches Meta normally. The problem is <mark>where CompleteRegistration lands and what triggers it</mark>, made worse by the health category data-sharing restriction.</p>
+
+    <div class="finding">
+      <div class="fhead"><h3>Two pixels, and the registration only reaches one of them</h3><span class="tag high">High impact</span></div>
+      <p>The Meta for WordPress plugin loads pixel <code>461876474856948</code> with its Conversions API connection. GTM loads a second pixel, <code>721212755566944</code>. On /thank-you/ this is what Meta receives:</p>
+      <div class="tblwrap">
+      <table class="tbl">
+        <tr><th>Event on /thank-you/</th><th>Pixel 461876474856948 (WordPress plugin)</th><th>Pixel 721212755566944 (GTM)</th></tr>
+        <tr><td>PageView</td><td class="ok">Received</td><td class="ok">Received</td></tr>
+        <tr><td>CompleteRegistration</td><td class="bad">Not received</td><td class="ok">Received</td></tr>
+      </table>
+      </div>
+      <p style="margin-top:14px">If your ad account and Events Manager view use the plugin pixel, <strong>Meta never sees a registration</strong>, even though the event is firing.</p>
+    </div>
+
+    <div class="finding">
+      <div class="fhead"><h3>Triggers point at pages and forms that no longer exist</h3><span class="tag high">High impact</span></div>
+      <p>The container still holds triggers built for an older version of the site. Three of them no longer match anything live:</p>
+      <div class="tblwrap">
+      <table class="tbl">
+        <tr><th>GTM setting</th><th>What it expects</th><th>What the site does now</th></tr>
+        <tr><td>CompleteRegistration custom HTML tag</td><td>URL contains /confirmation-page</td><td class="bad">That page returns a 404</td></tr>
+        <tr><td>GA4 form submission trigger</td><td>Form ID gform_9</td><td class="bad">Live booking form is gform_3</td></tr>
+        <tr><td>Gravity Forms listener</td><td>AJAX confirmation event</td><td class="bad">Form submits by postback, then redirects to booking</td></tr>
+      </table>
+      </div>
+      <p style="margin-top:14px">The booking itself finishes inside Practice Better, so the registration only counts if Practice Better sends people back to /thank-you/ afterwards. That redirect needs checking on the call.</p>
+    </div>
+
+    <div class="finding med">
+      <div class="fhead"><h3>Health category restriction and a doubled container</h3><span class="tag medium">Medium impact</span></div>
+      <div class="cmp">
+        <div class="r"><h4>What is blocking data now</h4>
+          <ul>
+            <li>Service URLs cover eating disorders, diabetes, IBS and PCOS, so Meta has likely classed the domain as health, which limits lower funnel events</li>
+            <li>GTM-TXPX6DN loads twice, so gtm.js fires twice on every page</li>
+            <li>fbevents.js loads twice from two sources</li>
+            <li>Universal Analytics tags still in the container, collecting nothing</li>
+          </ul>
+        </div>
+        <div class="g"><h4>What works after the fix</h4>
+          <ul>
+            <li>One pixel, one base code, one CompleteRegistration tag</li>
+            <li>Event names and URLs reviewed against the restriction so the signal Meta allows still reaches it</li>
+            <li>Campaign optimisation event set to one Meta will report on</li>
+            <li>A container with only live tags, easier to debug next time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="wrap">
+    <div class="sh"><span class="num">02</span><h2>The 30 day plan</h2></div>
+    <p class="intro">Most of this gets done in the first live session. You make the changes, I guide each click. The remaining weeks confirm Meta is receiving and using the data.</p>
+
+    <div class="timeline">
+      <h4>Timeline</h4>
+      <div class="wk"><div></div><div><span>Wk 1</span><span>Wk 2</span><span>Wk 3</span><span>Wk 4</span></div></div>
+      <div class="trow"><div>Pick one pixel</div><div class="track"><span class="on"></span><span></span><span></span><span></span></div></div>
+      <div class="trow"><div>Rebuild trigger</div><div class="track"><span class="on"></span><span></span><span></span><span></span></div></div>
+      <div class="trow"><div>Restriction review</div><div class="track"><span class="on"></span><span class="on"></span><span></span><span></span></div></div>
+      <div class="trow"><div>Campaign event</div><div class="track"><span></span><span class="on"></span><span class="on"></span><span></span></div></div>
+      <div class="trow"><div>Clean up and monitor</div><div class="track"><span></span><span></span><span class="on"></span><span class="on"></span></div></div>
+    </div>
+
+    <div class="steps">
+      <div class="step"><div class="sn">1</div><div><h3>Confirm which pixel your ad account uses, retire the other</h3><p>Check the dataset in Events Manager and the ad set, keep that pixel, and remove the second base code from either GTM or the plugin.</p><div class="why">Why: every event, including CompleteRegistration, then lands in one place.</div></div></div>
+      <div class="step"><div class="sn">2</div><div><h3>Move CompleteRegistration onto the real confirmation</h3><p>Replace the /confirmation-page trigger with one tag on /thank-you/ and /fr/merci/, pointed at the kept pixel, with an event ID so browser and Conversions API events deduplicate.</p><div class="why">Why: the current trigger waits for a page that returns a 404.</div></div></div>
+      <div class="step"><div class="sn">3</div><div><h3>Check the Practice Better return path</h3><p>Do one test booking together and confirm Practice Better redirects to /thank-you/ once the session is booked.</p><div class="why">Why: without that redirect, a finished booking never touches your site.</div></div></div>
+      <div class="step"><div class="sn">4</div><div><h3>Review the data-sharing restriction</h3><p>Read the exact restriction in Events Manager, see which events and parameters it blocks, and request a review if the classification is wrong.</p><div class="why">Why: it decides which event your campaigns are allowed to optimise for.</div></div></div>
+      <div class="step"><div class="sn">5</div><div><h3>Set the campaign conversion event, then clean the container</h3><p>Point the ad set at an event Meta reports on, remove the duplicate GTM load and the dead Universal Analytics tags, and verify in Test Events.</p><div class="why">Why: clean data in, accurate reporting out.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="sh"><span class="num">03</span><h2>Comparable results</h2></div>
+    <p class="intro">Healthcare accounts where fixing conversion tracking was the first job.</p>
+    <div class="rgrid">
+      <div class="rcard">
+        <div class="rl">Cosmetic surgery clinic</div>
+        <div class="big">+140%</div>
+        <div class="sub">confirmed bookings after the tracking rebuild</div>
+        <div class="bar"><div class="bt"><span>Before</span><span>5</span></div><div class="bg"><div class="fill dim" style="width:42%"></div></div></div>
+        <div class="bar"><div class="bt"><span>After</span><span>12</span></div><div class="bg"><div class="fill" style="width:100%"></div></div></div>
+      </div>
+      <div class="rcard">
+        <div class="rl">Cosmetic surgery clinic</div>
+        <div class="big">53.8% lower</div>
+        <div class="sub">cost per conversion, on level ad spend</div>
+        <div class="bar"><div class="bt"><span>Before</span><span>$99.97</span></div><div class="bg"><div class="fill dim" style="width:100%"></div></div></div>
+        <div class="bar"><div class="bt"><span>After</span><span>$46.15</span></div><div class="bg"><div class="fill" style="width:46%"></div></div></div>
+      </div>
+      <div class="rcard">
+        <div class="rl">London plastic surgery clinic</div>
+        <div class="big">0 to 18</div>
+        <div class="sub">Book Appointment conversions once booking flow tracking went live</div>
+        <div class="bar"><div class="bt"><span>July</span><span>0.00</span></div><div class="bg"><div class="fill dim" style="width:2%"></div></div></div>
+        <div class="bar"><div class="bt"><span>August</span><span>18.00</span></div><div class="bg"><div class="fill" style="width:100%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sh"><span class="num">04</span><h2>What happens next</h2></div>
+    <div class="ngrid">
+      <div class="ncard"><span class="num">STEP 1</span><h3>Live session</h3><p>In your 5:30 to 8:00 AM PT or 8:00 to 9:00 PM PT window. You share your screen, we work through Events Manager, GTM and the plugin together.</p></div>
+      <div class="ncard"><span class="num">STEP 2</span><h3>Test booking</h3><p>One booking end to end, watching Test Events, so you see CompleteRegistration arrive on the right pixel.</p></div>
+      <div class="ncard"><span class="num">STEP 3</span><h3>Written summary</h3><p>Within 24 hours: every change made, what to watch in Events Manager, and anything waiting on Meta's review.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>Let's have a quick call</h2>
+    <p>Reply to my message with a time that suits you.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap"><b>Usman Gull</b>, Google Ads and SEO Specialist</div>
+</footer>
+
+</body>
+</html>
